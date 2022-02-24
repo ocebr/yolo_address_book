@@ -1,0 +1,8 @@
+AJOUTER PERM DANS JWT et donc AUTHENTICATED STRUC
+
+dans get your friend, call find user by id avant d'envoyer le json (contenant l'id + full_name to display ?) --> OK
+
+ajouter dans handler/users -> supprimer friend
+
+ajouter si amis -> ok en response
+        si pas amis -> autre response qui peut etre handle dans le js
