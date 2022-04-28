@@ -17,7 +17,7 @@ RUN cargo build --release
 RUN  cp ./target/release/yolo_adress_book /bin/yolo_adress_book
 
 
-FROM ubuntu
+FROM gcr.io/distroless/cc
 
 COPY --from=builder --chown=1:1 ${HOME}/bin/yolo_adress_book  /app/main
 COPY --from=builder --chown=1:1 /home/.env app/.env
